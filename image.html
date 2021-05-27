@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Pour ajouter le comportement flottant : https://getbootstrap.com/docs/4.6/utilities/float/ -->
+    <div class="alert alert-success alert-dismissible fade show  col-4 float-left">
+        Bonjour
+        <button class="close" data-dismiss="alert">Close this</button>
+    </div>
+    
+    <div class="alert alert-danger alert-dismissible col-4 float-right">
+        Attention !!!
+        <button class="close" data-dismiss="alert">Close this</button>
+    </div>
+
+    <!-- Déactive le float: https://getbootstrap.com/docs/4.6/utilities/clearfix/ -->
+    <div class="clearfix"></div>
+
+    <!-- Attention il manque la dépendance popper.min.js -->
+    <!-- Alternative, utiliser le bootstrap.bundle.js => Qui contient toute les dépendences -->
+    <h2>Exemple de bouton</h2>
+    <div class="dropdown">
+        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" >Hello World</button>
+        <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-item">Riri</li>
+            <li class="dropdown-item">Fifi</li>
+            <li class="dropdown-item">Zaza</li>
+        </ul>
+    </div>
+    <input type="hidden" value="riri" >
+
+<!--     
+    <h2>Image responsive -> Limité à la taille de l'image</h2>
+    <img class="img-fluid" src="images/demon_slayer.jpg" alt="Tanjirō de Demon Slayer">
+-->
+    <h2>Image Thumbnails -> Ajoute une bordure avec un radius de 1px</h2>
+    <img class="img-thumbnail img-profil" src="images/Donald.jpg" alt="Donald Duck">
+
+    <h2>Image avec des bords arrondi</h2>
+    <img class="rounded img-profil" src="images/demon_slayer.jpg" alt="Tanjirō">
+
+</body>
+</html>

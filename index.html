@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Ajout du CSS de bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Bootstrap v3 ou v4 => Ne pas oublier la dépendence à jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Ajout du JS du bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Ajout d'un fichier CSS "personnel" -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Hello World</h1>
+
+    <div class="container-lg demo">
+        <a href="https://getbootstrap.com/docs/4.6/layout/overview/#containers">Doc Containers</a>
+        <p class="col-12">Hello There</p>
+
+        <!-- Demo de la grille de Bootstrap -->
+        <h2>Fonctionnement des "Row" avec colonne dynamique (sur les elements)</h2>
+        <div class="row">
+            <!-- .col    : Tout le temps / .col-sm : >= 576px / .col-md : >= 768px / .col-lg : >= 992px / .col-xl : >= 1140px -->
+            <p class="elemA col-12 col-md-6 col-lg-3">Element A</p>
+            <p class="elemB col-12 col-md-6 col-lg-3">Element B</p>
+            <p class="elemC col-12 col-lg-6">Element C</p>
+        </div>
+
+        <h2>Fonctionnement "Row" avec des colonnes parametré au niveau racine</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <!-- Dispo en Bootstap 4.6! -->
+            <p class="elemA col">Element 1</p>
+            <p class="elemB col">Element 2</p>
+            <p class="elemC col">Element 3</p>
+            <p class="elemA col">Element 4</p>
+            <p class="elemB col">Element 5</p>
+            <p class="elemC col">Element 6</p>
+        </div>
+
+        <h2>Modification du text</h2>
+        <!-- Non compatible avec la version 3 -->
+        <p>Lorem ipsum dolor sit amet <span class="font-weight-bold">consectetur</span> adipisicing elit.</p>
+        <p class="font-italic"> Est aut nobis minima reprehenderit expedita rem.</p> 
+        <p>Omnis, laborum. Dignissimos quia <span class="font-weight-light">ratione nihil</span> at eveniet nisi atque possimus porro.</p>
+    
+        <p><span class="text-uppercase">Lorem ipsum</span>, dolor sit amet consectetur adipisicing elit. Sed illum, quas doloremque ex cumque.</p>
+        <p>magni inventore iusto dolores <span class="text-lowercase">HELLO WoRlD</span> harum illo ipsa numquam consequatur quaerat laudantium beatae voluptatem nobis animi a.</p>
+    
+        <!-- Note : Ajout d'un title avec la copie du contenue pour le confort de l'utilisateur -->
+        <p class="text-truncate" title="Sed illum, quas doloremque ex cumque.">Sed illum, quas doloremque ex cumque.</p>
+
+        <!-- Dispo en 4.6 -->
+        <p class="text-break">azertyuiopzertyuiopertyuioazertyuiopzertyuiopertyuio</p>
+
+        
+        <h2>Affichage sous forme de tableau</h2>
+        <a href="table.html">Clique ici</a>
+        
+        <h2>Affichage des images</h2>
+        <a href="image.html">Clique ici</a>
+
+        <h2>Gestion des formulaires</h2>
+        <a href="formulaire.html">Clique ici</a>
+    </div>
+
+    
+</body>
+</html>

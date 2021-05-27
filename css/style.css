@@ -1,0 +1,33 @@
+.demo {
+    background-color: hotpink;
+}
+
+.elemA {
+    background-color: crimson;
+}
+
+.elemB {
+    background-color: royalblue;
+}
+
+.elemC {
+    background-color: khaki;
+}
+
+
+/* .table-striped tbody tr:nth-of-type(odd)  {
+    background-color: hotpink;
+}
+
+.table-striped tbody tr:nth-of-type(even)  {
+    background-color: chartreuse;
+}  */
+
+
+.img-profil {
+    width: 200px;
+}
+
+.text-small {
+    font-size: 0.7em;
+}

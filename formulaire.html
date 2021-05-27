@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mb-5">
+        <h1 class="text-center">Demo des formulaires</h1>
+        <form class="row" >
+            <div class="form-group col-6">
+                <label for="firstname">Prenom</label>
+                <input class="form-control" type="text" id="firstname" name="firstname" placeholder="John">
+            </div>
+            <div class="form-group col-6">
+                <label for="lastname">Nom</label>
+                <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Smith">
+            </div>
+            <div class="form-group col-12">
+                <label for="email">E-Mail</label>
+                <input class="form-control" type="text" id="email" name="email" placeholder="j.smith@yahoo.fr">
+                <span class="form-text text-muted text-small">Des infos !</span>
+            </div>
+            <div class="col-12">
+                <div class="form-group form-check" >
+                    <input class="form-check-input" type="checkbox" id="presence">
+                    <label class="form-check-label" for="presence">Allez vous être présent ?</label>
+                </div>
+            </div>
+
+            <div class="form-group col-12">
+
+                <div class="input-group">
+                    <div class="input-group-prepend ">
+                        <div class="input-group-text bg-dark text-light">Demo</div>
+                    </div>
+                    <input class="form-control" type="text">
+                </div>
+
+            </div>
+
+
+
+            <h3>Modification customisé pour les checkbox et radio</h3>
+            <div class="col-12">
+                <div class="form-group custom-control custom-checkbox" >
+                    <input class="custom-control-input" type="checkbox" id="demo1" >
+                    <label class="custom-control-label" for="demo1">Design check</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-group custom-control custom-radio" >
+                    <input class="custom-control-input" type="checkbox" id="demo2">
+                    <label class="custom-control-label" for="demo2">Design radio</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-group custom-control custom-switch" >
+                    <input class="custom-control-input" type="checkbox" id="demo3">
+                    <label class="custom-control-label" for="demo3">Design switch</label>
+                </div>
+            </div>
+
+            <div class="mb-2 col-12">
+                <h6>Bouton</h6>
+                <input class="btn btn-success" type="submit" value="Envoyer le formulaire" >
+                <input class="btn btn-danger" type="reset" value="Effacer le formulaire" >
+            </div>
+
+            <div class="mb-2 col-12">
+                <h6>Bouton de taille différente</h6>
+                <input class="btn btn-success btn-lg" type="submit" value="Envoyer le formulaire" >
+                <input class="btn btn-danger btn-sm" type="reset" value="Effacer le formulaire" >
+            </div>
+
+            <div class="mb-2 col-12">
+                <h6>Bouton "outline"</h6>
+                <input class="btn btn-outline-success" type="submit" value="Envoyer le formulaire" >
+                <input class="btn btn-outline-danger" type="reset" value="Effacer le formulaire" >
+            </div>
+
+            <div class="mb-2 col-12">
+                <h6>Bouton groupé</h6>
+                <div class="btn-group" role="group">
+                    <button class="btn btn-success" type="submit" >Envoyer le formulaire</button>
+                    <button class="btn btn-danger" type="reset"  >Effacer le formulaire</button>
+                </div>
+            </div>
+                
+        </form>
+    </div>
+</body>
+</html>
