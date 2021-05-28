@@ -31,3 +31,15 @@
 .text-small {
     font-size: 0.7em;
 }
+
+
+.dropdown-item:hover, .dropdown-item:focus {
+    text-decoration: none;
+    background-color: palevioletred;
+}
+
+
+.custom-card .card-img-top {
+    height: 10rem;
+    object-fit: contain;
+}
